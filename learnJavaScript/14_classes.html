@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let myself = {
+        //     // properties
+        //     name : "yell htet aung",
+        //     age : 24,
+        //     gf : "Thae",
+        //     skill : "Web Development",
+        //     // methods
+        //     teach(){
+        //         return this.name+" teach "+this.skill;
+        //     },
+        //     showBdYear(){
+        //         return `${this.name} was borned in ${2022-this.age}`;
+        //     }
+        // }
+
+        // class Myself{
+        //     constructor(x,y){
+        //         // console.log("I'm constructor ---" +x+" --- "+y);
+        //         this.name = x;
+        //     }
+
+        //     // properties
+        //     // name = "yell htet aung";
+        //     static age = 24;  // static keyword ထည့်လိုက်ရင် instance ဆောက်စရာမလိုပဲ data ဆွဲထုတ်လို့ရတယ်။
+        //     gf = "Thae";
+        //     skill = "Web Development";
+
+        //     // methods
+        //     teach(){
+        //         return this.name+" can teach";
+        //     };
+
+        //     showBdYear(){
+        //         return "I was borned in 1998";
+        //     }
+        // }
+
+        // let myself = new Myself("bbb","ccc"); // instantiate ( class -> obj)
+        // console.log(myself.name);
+        // console.log(myself.gf);
+        // console.log(myself.showBdYear());
+
+            class Student{
+                constructor(name,age,phone){
+                    this.name = name;
+                    this.age = age;
+                    this.phone = phone;
+                }
+
+                learn(){
+                    return this.name+" can learn";
+                }
+            }
+
+            let s1 = new Student("Mg Mg",18,"09123123");
+            let s2 = new Student("Kyaw Kyaw",15,"09123412");
+            let s3 = new Student("Zaw Zaw",13,"09234234");
+            let s4 = new Student("Su Su",21,"09567567");
+
+
+    </script>
+</body>
+</html>
