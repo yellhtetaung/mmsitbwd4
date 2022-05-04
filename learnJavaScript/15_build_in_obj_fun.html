@@ -9,11 +9,11 @@
 <body>
     <script>
         
-        let d = new Date();
+        // let d = new Date();
 
-        console.log(d.getHours()+" : "+d.getMinutes());
+        // console.log(d.getHours()+" : "+d.getMinutes());
 
-        console.log(`${d.getDate()} / ${d.getMonth()} / ${d.getFullYear()}`);
+        // console.log(`${d.getDate()} / ${d.getMonth()} / ${d.getFullYear()}`);
 
         // d.toString()
         // 'Sat Apr 30 2022 02:12:35 GMT+0630 (Myanmar Time)'
@@ -35,9 +35,18 @@
         // '2:12:35 AM'
         // d.toLocaleTimeString("ko-KR")
         // '오전 2:12:35'
+        
+        let d = new Date();
+        console.log(d);
+        // let currentHour = d.getHours();
+        // d.setHours(currentHour+1500);
+        // d.setMonth(d.getMonth()+4);
+        let totalLessonHours = 50;
+        let learnHourPerDay = 2;
+        let daysToFinish = totalLessonHours / learnHourPerDay;
+        d.setDate(d.getDate()+daysToFinish);
 
-
-
+        console.log(d);
 
     </script>
 </body>
